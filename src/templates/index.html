@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HelloEVM provides a unified development environment to simplify Ethereum project creation, making Web3 development more intuitive and efficient.">
+    <meta name="keywords" content="Ethereum, Web3, Development, IDE, Smart Contracts, Vyper, Solidity, EVM, HelloEVM, Hello">
+    <meta name="author" content="0x77">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-title" content="Hello EVM">
+    <meta property="og:title" content="Hello EVM | Unlocking The Next Frontier In Web3 Development">
+    <meta property="og:description" content="A unified development environment to simplify Ethereum project creation.">
+    <meta property="og:image" content="/assets/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.helloevm.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.helloevm.com/html-meta-tags/twitter-tags.png">
+    <meta name="twitter:title" content="Unlocking The Next Frontier In Web3 Development">
+    <meta name="twitter:description" content="A unified development environment to simplify Ethereum project creation.">
+    <meta name="twitter:creator" content="@0x00077">
+    <meta name="twitter:site" content="@0x00077">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Hello EVM | Unlocking The Next Frontier In Web3 Development</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icon.svg">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'custom-radial': "radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.5) 2px, transparent 2px)"
+                    },
+                    backgroundSize: {
+                        "custom-size": "128px 128px"
+                    },
+                    backgroundPosition: {
+                        "custom-position": "0 0, 50px 50px"
+                    },
+                    backgroundColor: {
+                        "nav-100": "#161f2c",
+                        "nav-200": "#10151d",
+                        "nav-300": "#A87FFB"
+                    },
+                    colors: {
+                        "text-100": "#BFC7D2",
+                        "text-200": "#A87FFB",
+                        "text-300": "#10151d"
+                    },
+                    keyframes: {
+                        moveUp: {
+                            "0%": { backgroundPosition: "0 0, 64px 64px" },
+                            "100%": { backgroundPosition: "0 -128px, 64px -64px" }
+                        }
+                    },
+                    animation: {
+                        "move-up": "moveUp 5s linear infinite"
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="flex flex-row bg-nav-200">
+        <nav class="bg-nav-100 border-r-2 border-gray-800 items-center justify-between flex flex-col relative bg-custom-radial"
+            id="nav">
+            <div class="gap-2">
+                <a class="gap-2 max-md:py-3 z-50 m-4 py-4 flex items-center justify-center" href="/" title="Hello EVM">
+                    <svg class="w-8 h-8" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="124" x="28" y="156"></rect>
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="52" x="48" y="120"></rect>
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="52" x="72" y="84"></rect>
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="36" x="84" y="48"></rect>
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="24" x="48" y="48"></rect>
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="88" x="64" y="12"></rect>
+                        <rect class="fill-[#ffc328]" height="24" rx="12" width="24" x="28" y="12"></rect>
+                    </svg>
+                </a>
+                <a class="text-text-100 m-4 pb-2 flex flex-col items-center justify-center text-[10px]" href="/">
+                    <svg class="w-4 h-2.5 mb-1 md:h-4" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg"
+                        fill="none">
+                        <path
+                            d="M.5 10.943V5.696a2.5 2.5 0 0 1 1.273-2.178l4.49-2.53a1.5 1.5 0 0 1 1.473 0l4.49 2.53A2.5 2.5 0 0 1 13.5 5.696v5.247a1.5 1.5 0 0 1-1.5 1.5H2a1.5 1.5 0 0 1-1.5-1.5Z"
+                            stroke="currentColor"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a class="text-text-100 m-4 pb-2 flex flex-col items-center justify-center text-[10px]" href="/">
+                    <svg class="w-5 h-3 mb-1 md:h-5" viewBox="0 0 19 13" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path
+                            d="M1 6.364c0-2.21.895-4.21 2.343-5.657L2.636 0A8.972 8.972 0 0 0 0 6.346v.036a8.972 8.972 0 0 0 2.636 6.346l.707-.707A7.975 7.975 0 0 1 1 6.364ZM15 .707a7.975 7.975 0 0 1 2.343 5.657c0 2.21-.895 4.21-2.343 5.657l.707.707a8.971 8.971 0 0 0 2.636-6.347v-.035A8.971 8.971 0 0 0 15.707 0L15 .707Zm-2.657 5.657a3 3 0 1 0-6 0 3 3 0 0 0 6 0Zm1 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"
+                            fill="currentColor" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+                <a class="text-text-100 m-4 pb-2 flex flex-col items-center justify-center text-[10px]" href="/"
+                    rel="noopener" target="_blank">
+                    <svg class="w-4 h-2 mb-1 md:h-5" viewBox="0 0 14 10" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path d="M14 1.17H0v-1h14v1Zm0 4H0v-1h14v1Zm-14 4h9v-1H0v1Z" fill="currentColor"
+                            clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <span>Docs</span>
+                </a>
+            </div>
+            <a class="flex justify-center group" href="/" title="Donation">
+                <img src="./assets/images/donation.svg" alt="donation" class="w-16 h-16 m-4 pb-4">
+            </a>
+        </nav>
+
+        <main
+            class="flex flex-col mx-36 bg-nav-200 bg-custom-radial bg-custom-size bg-custom-position animate-move-up md:relative justify-between w-full min-h-screen overflow-hidden">
+            <header class="flex flex-col pb-14 pt-8 mx-24">
+                <nav class="container items-center justify-end flex flex-row gap-3 top-0">
+                    <a class="border border-gray-700 text-text-100 bg-nav-200 py-4 px-8 rounded-full hover:border-[#A87FFB]"
+                        href="/">
+                        Share to X
+                    </a>
+                    <button type="button" class="bg-nav-300 text-text-300 py-4 px-12 rounded-full hover:bg-[#ffc328]">
+                        Explore EVM
+                    </button>
+                </nav>
+
+                <div class="flex flex-col items-center justify-center mt-40 mr-12">
+                    <div class="text-text-200 font-medium text-xl mb-2">
+                        Built for Coders
+                    </div>
+                    <h1 class="text-text-100 text-7xl text-center font-bold line-clamp-2 mb-6">
+                        Unlocking The Next Frontier <br>In Web3 Development
+                    </h1>
+                    <p class="text-[#808C9C] text-center line-clamp-3 tracking-wider leading-relaxed">
+                        Elevate your Web3 development journey with our visual online IDE,
+                        designed to <br> simplify Ethereum project creation. From ideation to deployment,
+                        experience streamlined <br> smart contract development 
+                        that accelerates innovation within the Ethereum ecosystem.
+                    </p>
+                </div>
+            </header>
+            <footer class="text-center py-8 pr-12">
+                <div class="mx-auto">
+                    <p class="bg-nav-200 text-text-100 px-4 py-2 inline-block">© 2024 Hello EVM Ltd. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+
+
+    </div>
+
+</body>
+
+
+</html>
