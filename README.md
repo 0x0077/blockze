@@ -1,9 +1,9 @@
-# HelloEVM: A Unified Development Environment for Web3
-HelloEVM provides a unified development environment for Web3 developers, revolutionizing the way Ethereum projects are explored, collaborated on, built, and deployed.
+# Blockze: A Unified Development Environment for Web3
+Blockze provides a unified development environment for Web3 developers, revolutionizing the way Ethereum projects are explored, collaborated on, built, and deployed.
 
 
 ## About the Project
-HelloEVM aims to simplify the development process of Ethereum projects by offering a visual online IDE environment. This makes writing, testing, and deploying smart contracts more intuitive and efficient. Our goal is to lower the barrier to entry for Web3 development while enhancing developer productivity, thereby accelerating innovation and growth within the Ethereum ecosystem.
+Blockze aims to simplify the development process of Ethereum projects by offering a visual online IDE environment. This makes writing, testing, and deploying smart contracts more intuitive and efficient. Our goal is to lower the barrier to entry for Web3 development while enhancing developer productivity, thereby accelerating innovation and growth within the Ethereum ecosystem.
 
 
 ## Features
@@ -15,11 +15,11 @@ HelloEVM aims to simplify the development process of Ethereum projects by offeri
 
 
 ## Developed Using Sanic and PyScript
-This project is developed using Sanic, a fast, asynchronous web framework for Python, enabling efficient backend services. Frontend interactions are powered by PyScript, allowing Python code to run directly in the browser. This combination offers a seamless development experience from backend to frontend, making HelloEVM a powerful tool for Web3 development.
+This project is developed using Sanic, a fast, asynchronous web framework for Python, enabling efficient backend services. Frontend interactions are powered by PyScript, allowing Python code to run directly in the browser. This combination offers a seamless development experience from backend to frontend, making Blockze a powerful tool for Web3 development.
 
 
 ## Getting Started
-1. Visit HelloEVM
+1. Visit Blockze
 2. Create a new project or import an existing one
 3. Design and write your smart contracts using the visual tools
 4. Test your smart contracts to ensure they work as expected
