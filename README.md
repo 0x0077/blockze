@@ -1,29 +1,34 @@
 # Blockze: A Unified Development Environment for Web3
-Blockze provides a unified development environment for Web3 developers, revolutionizing the way Ethereum projects are explored, collaborated on, built, and deployed.
+Blockze is a revolutionary smart contract development environment designed for all major blockchain platforms. It combines AI technology, infinite canvas programming, and low-code functionality to transform the way blockchain projects are explored, collaborated on, built, and deployed.
+
+## Core Features
+### AI-Assisted Development
+1. **Intelligent Code Generation:** Utilize AI technology to automatically generate smart contract code templates and common code snippets based on user input and context, significantly improving development efficiency.
+2. **Error Detection and Optimization:** Real-time code analysis to identify potential errors and security vulnerabilities, providing optimization suggestions to ensure code safety and reliability.
+3. **Automated Test Generation:** Automatically create comprehensive test cases based on contract functionality, reducing the time and effort required for manual testing.
+4. **AI-Driven Documentation Generation:** Automatically generate clear and detailed documentation for smart contracts, including function descriptions and parameter explanations, facilitating team collaboration and maintenance.
+5. **Personalized Learning Assistant:** AI recommends relevant learning resources and tutorials based on the user's development progress and needs, helping newcomers quickly get started with blockchain development.
+
+### Infinite Canvas Programming
+1. **Multi-Chain Support:** Supports multiple major blockchain platforms such as Ethereum, Binance Smart Chain, Polkadot, and Cardano, meeting the needs of different blockchain projects.
+2. **One-Click Cross-Chain Deployment:** Simplifies the deployment process, allowing smart contracts to be easily deployed to different blockchain networks.
 
 
-## About the Project
-Blockze aims to simplify the development process of Ethereum projects by offering a visual online IDE environment. This makes writing, testing, and deploying smart contracts more intuitive and efficient. Our goal is to lower the barrier to entry for Web3 development while enhancing developer productivity, thereby accelerating innovation and growth within the Ethereum ecosystem.
+### Real-Time Collaboration
+1. **Team Collaboration:** Supports multiple users working on the same project simultaneously, promoting team collaboration and communication.
+2. **Version Control:** Integrates version control systems, making it easy for teams to manage code changes and history.
 
+### Integrated Testing Environment
+1. **Automated Testing Tools:** Built-in automated testing tools to ensure the security and reliability of smart contracts.
+2. **Test Report Generation:** Automatically generates detailed test reports, helping developers quickly identify and fix issues.
 
-## Features
-- **Visual Programming Interface**: An intuitive drag-and-drop interface makes writing and interacting with smart contracts straightforward.
-- **Real-time Collaboration**: Team members can collaborate in real-time, editing and testing smart contracts together.
-- **One-click Deployment**: Simplified deployment process to deploy smart contracts to the Ethereum network with just one click.
-- **multi-chain Support**: Supports multiple Ethereum-compatible chains, allowing developers to easily explore and leverage the advantages of different networks.
-- **Rich Resources and Tools**: Integrates a wide range of development tools and libraries to help developers work more efficiently, along with providing extensive learning resources to promote knowledge sharing.
-
-
-## Developed Using Sanic and PyScript
-This project is developed using Sanic, a fast, asynchronous web framework for Python, enabling efficient backend services. Frontend interactions are powered by PyScript, allowing Python code to run directly in the browser. This combination offers a seamless development experience from backend to frontend, making Blockze a powerful tool for Web3 development.
-
-
-## Getting Started
-1. Visit Blockze
-2. Create a new project or import an existing one
-3. Design and write your smart contracts using the visual tools
-4. Test your smart contracts to ensure they work as expected
-5. Deploy to your chosen Ethereum network with just one click
+## Why Choose Blockze?
+- **Simplify Complexity:** Transform the complexity of multi-chain development into an intuitive visual interface.
+- **Increase Efficiency:** Significantly speed up development with AI assistance and low-code features.
+- **Lower Barriers:** Make it easier for newcomers to enter the field of blockchain development.
+- **Foster Innovation:** Support rapid prototyping and cross-chain project development.
+- **Enhance Collaboration:** Improve team communication and workflows with real-time collaboration features.
+- **Comprehensive Security:** Built-in AI-driven security checks and testing tools ensure code quality.
 
 
 ## How to Contribute
